@@ -49,7 +49,6 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 		finally {
 			DB.closeStatement(st);
 		}
-		
 	}
 	
 
