@@ -36,6 +36,12 @@ public class Program2 {
 		departmentDao.update(department);
 		System.out.println("Update completed");
 		
+		System.out.println("\n=== TEST 5: seller findAll ===");
+		List <Department> list = departmentDao.findAll();
+		for (Department d : list) {
+			System.out.println(d);
+		}	
+		
+		sc.close();
 	}
-
 }
