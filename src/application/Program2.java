@@ -16,7 +16,7 @@ public class Program2 {
 		DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
 		
 		System.out.println("\n=== TEST 1: department insert ===");
-		Department newDep = new Department(5, "Fotball");
+		Department newDep = new Department(5, "Manager");
 		departmentDao.insert(newDep);
 		System.out.println("Inserted! New id = " + newDep.getId());
 		
@@ -36,7 +36,7 @@ public class Program2 {
 		departmentDao.update(department);
 		System.out.println("Update completed");
 		
-		System.out.println("\n=== TEST 5: seller findAll ===");
+		System.out.println("\n=== TEST 5: department findAll by Id ===");
 		List <Department> list = departmentDao.findAll();
 		for (Department d : list) {
 			System.out.println(d);
